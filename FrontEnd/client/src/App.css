@@ -1,0 +1,80 @@
+.question-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  background-color: #f5f5f5; /* Light background color */
+}
+
+.message {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.user-question {
+  background-color: #e0f2ff; /* Light blue for user question */
+  border: 1px solid #bfefff; /* Blue border for user question */
+}
+
+.ai-answer {
+  background-color: #f7f7f7; /* Light gray for AI answer */
+  border: 1px solid #cccccc; /* Gray border for AI answer */
+}
+
+.error-message {
+  color: #dc3545; /* Red for error message */
+  border: 1px solid #dc3545; /* Red border for error message */
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: #428bca; /* Blue for submit button */
+  color: hsl(0, 5%, 85%);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #357ebd; /* Darker blue on hover */
+}
+
+.loading-gear {
+  margin: 1rem 0;
+  font-size: 2rem;
+  color: #cccccc; /* Light gray for loading indicator */
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
